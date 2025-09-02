@@ -2,12 +2,25 @@ import os
 import math
 import sys
 import configparser
+import logging
 import pandas as pd
 import dask.dataframe as dd
 from dask.distributed import Client, LocalCluster
 
 # ---- MonkDB client (your existing lib) ----
 from monkdb import client as monk_client
+
+# ---------------- Logging ------------------
+LOG_FILE = "orchestrator.log"
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler(LOG_FILE, mode="a", encoding="utf-8"),
+        logging.StreamHandler(sys.stdout),
+    ],
+)
+logger = logging.getLogger(__name__)
 
 # ---------------- Config -------------------
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
@@ -34,6 +47,7 @@ INSERT INTO {DB_SCHEMA}.{TABLE_NAME}
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 """
 
+# ---------------- Utils -------------------
 def _as_int(x):
     try:
         if pd.isna(x):
@@ -65,6 +79,7 @@ def _connect():
         username=DB_USER
     )
 
+# ---------------- Partition Insert -------------------
 def _ingest_partition(pdf: pd.DataFrame) -> pd.DataFrame:
     if pdf.empty:
         return pd.DataFrame({"rows_inserted": [0]})
@@ -101,13 +116,17 @@ def _ingest_partition(pdf: pd.DataFrame) -> pd.DataFrame:
                 cur.executemany(INSERT_SQL, batch)
                 conn.commit()
                 total += len(batch)
+                logger.info(f"Inserted batch of {len(batch)} rows")
                 batch.clear()
 
         if batch:
             cur.executemany(INSERT_SQL, batch)
             conn.commit()
             total += len(batch)
+            logger.info(f"Inserted final batch of {len(batch)} rows")
 
+    except Exception as e:
+        logger.error(f"❌ Error inserting partition: {e}", exc_info=True)
     finally:
         try:
             cur.close()
@@ -120,7 +139,9 @@ def _ingest_partition(pdf: pd.DataFrame) -> pd.DataFrame:
 
     return pd.DataFrame({"rows_inserted": [total]})
 
+# ---------------- Main -------------------
 def main(csv_file_path: str):
+    logger.info("🚀 Starting orchestrator")
     cluster = LocalCluster(
         n_workers=N_WORKERS,
         threads_per_worker=THREADS_PER_W,
@@ -128,7 +149,7 @@ def main(csv_file_path: str):
         dashboard_address=None,
     )
     client = Client(cluster)
-    print(f"✅ Dask cluster up: {N_WORKERS} workers x {THREADS_PER_W} threads")
+    logger.info(f"✅ Dask cluster up: {N_WORKERS} workers x {THREADS_PER_W} threads")
 
     ddf = dd.read_csv(
         csv_file_path,
@@ -138,27 +159,34 @@ def main(csv_file_path: str):
         encoding="utf-8",
         on_bad_lines="skip",
     )
+    logger.info(f"📂 Loaded CSV: {csv_file_path} with {len(ddf.columns)} columns")
 
     for col in ["product_id", "style_id", "title", "brand", "price", "mrp",
                 "discount_percent", "rating", "rating_total", "img_primary", "img_count"]:
         if col not in ddf.columns:
             ddf[col] = None
+            logger.warning(f"⚠️ Column {col} missing in input. Filling with None.")
 
-    results = ddf.map_partitions(_ingest_partition, meta={"rows_inserted": "int64"}).compute()
+    results = ddf.map_partitions(
+        _ingest_partition,
+        meta={"rows_inserted": "int64"}
+    ).compute()
+
     total_inserted = int(results["rows_inserted"].sum()) if not results.empty else 0
-    print(f"✅ Inserted {total_inserted} records into {DB_SCHEMA}.{TABLE_NAME}")
+    logger.info(f"✅ Inserted {total_inserted} records into {DB_SCHEMA}.{TABLE_NAME}")
 
     client.close()
     cluster.close()
+    logger.info("🏁 Orchestrator finished successfully")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python orchestrator.py <csv_file_path>")
+        logger.error("Usage: python orchestrator.py <csv_file_path>")
         sys.exit(1)
 
     csv_file = sys.argv[1]
     if not os.path.exists(csv_file):
-        print(f"❌ File not found: {csv_file}")
+        logger.error(f"❌ File not found: {csv_file}")
         sys.exit(1)
 
     main(csv_file)
