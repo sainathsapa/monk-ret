@@ -1,0 +1,144 @@
+{
+  "kpis": {
+    "avg_price": 1193.78,
+    "avg_mrp": 1428.79,
+    "avg_discount_pct": 16.36,
+    "no_discount_items": 33337.0,
+    "products": 209112.0
+  },
+  "tables": {
+    "brand_concentration": [
+      {
+        "brand": "20Dresses",
+        "items": 209112,
+        "share_pct": 100.0
+      }
+    ],
+    "discount_bands": [
+      {
+        "band": "0-20%",
+        "items": 96776
+      },
+      {
+        "band": "20-40%",
+        "items": 73441
+      },
+      {
+        "band": "0%",
+        "items": 33346
+      },
+      {
+        "band": "40-60%",
+        "items": 5549
+      }
+    ],
+    "top_discounted_rated": [
+      {
+        "product_id": 92483,
+        "title": "Women Cateye Sunglasses • Style 3572",
+        "brand": "20Dresses",
+        "price": 803.74,
+        "mrp": 1795.0,
+        "discount_percent": 55.22,
+        "rating": 0.0,
+        "rating_total": 2
+      },
+      {
+        "product_id": 467605,
+        "title": "Women Cateye Sunglasses • Style 5870",
+        "brand": "20Dresses",
+        "price": 806.86,
+        "mrp": 1795.0,
+        "discount_percent": 55.05,
+        "rating": 0.0,
+        "rating_total": 5
+      },
+      {
+        "product_id": 481056,
+        "title": "Women Cateye Sunglasses • Style 6204",
+        "brand": "20Dresses",
+        "price": 808.1,
+        "mrp": 1795.0,
+        "discount_percent": 54.98,
+        "rating": 0.0,
+        "rating_total": 9
+      },
+      {
+        "product_id": 440240,
+        "title": "Women Cateye Sunglasses • Style 1813",
+        "brand": "20Dresses",
+        "price": 810.23,
+        "mrp": 1795.0,
+        "discount_percent": 54.86,
+        "rating": 0.11,
+        "rating_total": 2
+      },
+      {
+        "product_id": 189459,
+        "title": "Women Cateye Sunglasses • Style 4021",
+        "brand": "20Dresses",
+        "price": 815.47,
+        "mrp": 1795.0,
+        "discount_percent": 54.57,
+        "rating": 0.2,
+        "rating_total": 18
+      },
+      {
+        "product_id": 312835,
+        "title": "Women Cateye Sunglasses • Style 5855",
+        "brand": "20Dresses",
+        "price": 816.15,
+        "mrp": 1795.0,
+        "discount_percent": 54.53,
+        "rating": 0.0,
+        "rating_total": 5
+      },
+      {
+        "product_id": 64330,
+        "title": "Women Cateye Sunglasses • Style 2925",
+        "brand": "20Dresses",
+        "price": 819.44,
+        "mrp": 1795.0,
+        "discount_percent": 54.35,
+        "rating": 0.19,
+        "rating_total": 3
+      },
+      {
+        "product_id": 129480,
+        "title": "Women Cateye Sunglasses • Style 8765",
+        "brand": "20Dresses",
+        "price": 820.19,
+        "mrp": 1795.0,
+        "discount_percent": 54.31,
+        "rating": 0.0,
+        "rating_total": 1
+      },
+      {
+        "product_id": 496041,
+        "title": "Women Cateye Sunglasses • Style 1595",
+        "brand": "20Dresses",
+        "price": 832.09,
+        "mrp": 1795.0,
+        "discount_percent": 53.64,
+        "rating": 0.0,
+        "rating_total": 2
+      },
+      {
+        "product_id": 397627,
+        "title": "Women Cateye Sunglasses • Style 2023",
+        "brand": "20Dresses",
+        "price": 835.91,
+        "mrp": 1795.0,
+        "discount_percent": 53.43,
+        "rating": 0.3,
+        "rating_total": 4
+      }
+    ]
+  },
+  "bullets": [
+    "Avg price ₹1,193.78, avg MRP ₹1,428.79, avg discount 16.36% across 209,112 items.",
+    "33,337 items are at MRP (0% discount).",
+    "Top brand: 20Dresses with 209,112 items (~100.00%).",
+    "Largest discount band: 0-20% at 96,776 items (~46.3%)."
+  ]
+}

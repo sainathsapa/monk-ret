@@ -1,0 +1,39 @@
+{
+  "kpis": {
+    "avg_price": 1054.38,
+    "avg_mrp": 1536.71,
+    "avg_discount_pct": 31.4,
+    "no_discount_items": 0.0,
+    "products": 136298.0
+  },
+  "tables": {
+    "brand_concentration": [
+      {
+        "brand": "20Dresses",
+        "items": 136298,
+        "share_pct": 100.0
+      }
+    ],
+    "discount_bands": [
+      {
+        "band": "20-40%",
+        "items": 111973
+      },
+      {
+        "band": "40-60%",
+        "items": 24309
+      },
+      {
+        "band": "60%+",
+        "items": 16
+      }
+    ],
+    "top_discounted_rated": []
+  },
+  "bullets": [
+    "Avg price ₹1,054.38, avg MRP ₹1,536.71, avg discount 31.40% across 136,298 items.",
+    "0 items are at MRP (0% discount).",
+    "Top brand: 20Dresses with 136,298 items (~100.00%).",
+    "Largest discount band: 20-40% at 111,973 items (~82.2%)."
+  ]
+}

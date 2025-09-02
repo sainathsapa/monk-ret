@@ -1,0 +1,173 @@
+{
+  "kpis": {
+    "avg_price": 1596.46,
+    "avg_mrp": 2205.05,
+    "avg_discount_pct": 24.92,
+    "no_discount_items": 0.0,
+    "products": 424743.0
+  },
+  "tables": {
+    "brand_concentration": [
+      {
+        "brand": "20Dresses",
+        "items": 280391,
+        "share_pct": 66.01
+      },
+      {
+        "brand": "4711",
+        "items": 54915,
+        "share_pct": 12.93
+      },
+      {
+        "brand": "9shines Label",
+        "items": 38264,
+        "share_pct": 9.01
+      },
+      {
+        "brand": "A Homes Grace",
+        "items": 29775,
+        "share_pct": 7.01
+      },
+      {
+        "brand": "4WRD by Dressberry",
+        "items": 12823,
+        "share_pct": 3.02
+      },
+      {
+        "brand": "250 DESIGNS",
+        "items": 8575,
+        "share_pct": 2.02
+      }
+    ],
+    "discount_bands": [
+      {
+        "band": "0-20%",
+        "items": 177346
+      },
+      {
+        "band": "20-40%",
+        "items": 175390
+      },
+      {
+        "band": "40-60%",
+        "items": 68340
+      },
+      {
+        "band": "60%+",
+        "items": 3645
+      },
+      {
+        "band": "0%",
+        "items": 22
+      }
+    ],
+    "top_discounted_rated": [
+      {
+        "product_id": 391698,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 4657",
+        "brand": "A Homes Grace",
+        "price": 1872.5,
+        "mrp": 6000.0,
+        "discount_percent": 68.79,
+        "rating": 4.12,
+        "rating_total": 28
+      },
+      {
+        "product_id": 157982,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 8215",
+        "brand": "A Homes Grace",
+        "price": 1955.87,
+        "mrp": 6000.0,
+        "discount_percent": 67.4,
+        "rating": 4.13,
+        "rating_total": 60
+      },
+      {
+        "product_id": 460235,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 2798",
+        "brand": "A Homes Grace",
+        "price": 2039.0,
+        "mrp": 6000.0,
+        "discount_percent": 66.02,
+        "rating": 4.88,
+        "rating_total": 26
+      },
+      {
+        "product_id": 282027,
+        "title": "Printed Halter Neck Dress • Style 9339",
+        "brand": "250 DESIGNS",
+        "price": 1386.81,
+        "mrp": 3999.0,
+        "discount_percent": 65.32,
+        "rating": 5.0,
+        "rating_total": 29
+      },
+      {
+        "product_id": 298598,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 4338",
+        "brand": "A Homes Grace",
+        "price": 2134.47,
+        "mrp": 6000.0,
+        "discount_percent": 64.43,
+        "rating": 5.0,
+        "rating_total": 40
+      },
+      {
+        "product_id": 111871,
+        "title": "College Cool Y2K Fits Jeans • Style 9355",
+        "brand": "4WRD by Dressberry",
+        "price": 1007.12,
+        "mrp": 2799.0,
+        "discount_percent": 64.02,
+        "rating": 4.01,
+        "rating_total": 39
+      },
+      {
+        "product_id": 424189,
+        "title": "College Cool Y2K Fits Jeans • Style 2079",
+        "brand": "4WRD by Dressberry",
+        "price": 1015.49,
+        "mrp": 2799.0,
+        "discount_percent": 63.72,
+        "rating": 4.2,
+        "rating_total": 53
+      },
+      {
+        "product_id": 113621,
+        "title": "College Cool Y2K Fits Jeans • Style 3462",
+        "brand": "4WRD by Dressberry",
+        "price": 1016.0,
+        "mrp": 2799.0,
+        "discount_percent": 63.7,
+        "rating": 4.47,
+        "rating_total": 49
+      },
+      {
+        "product_id": 235149,
+        "title": "College Cool Y2K Fits Jeans • Style 5976",
+        "brand": "4WRD by Dressberry",
+        "price": 1022.87,
+        "mrp": 2799.0,
+        "discount_percent": 63.46,
+        "rating": 4.16,
+        "rating_total": 46
+      },
+      {
+        "product_id": 280295,
+        "title": "College Cool Y2K Fits Jeans • Style 4932",
+        "brand": "4WRD by Dressberry",
+        "price": 1031.17,
+        "mrp": 2799.0,
+        "discount_percent": 63.16,
+        "rating": 4.18,
+        "rating_total": 45
+      }
+    ]
+  },
+  "bullets": [
+    "Avg price ₹1,596.46, avg MRP ₹2,205.05, avg discount 24.92% across 424,743 items.",
+    "0 items are at MRP (0% discount).",
+    "Top brand: 20Dresses with 280,391 items (~66.01%).",
+    "Largest discount band: 0-20% at 177,346 items (~41.8%)."
+  ]
+}

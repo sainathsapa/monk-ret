@@ -1,0 +1,156 @@
+{
+  "kpis": {
+    "avg_price": 2371.0,
+    "avg_mrp": 3409.57,
+    "avg_discount_pct": 30.48,
+    "no_discount_items": 0.0,
+    "products": 63448.0
+  },
+  "tables": {
+    "brand_concentration": [
+      {
+        "brand": "4711",
+        "items": 24995,
+        "share_pct": 39.39
+      },
+      {
+        "brand": "9shines Label",
+        "items": 20626,
+        "share_pct": 32.51
+      },
+      {
+        "brand": "A Homes Grace",
+        "items": 11034,
+        "share_pct": 17.39
+      },
+      {
+        "brand": "4WRD by Dressberry",
+        "items": 4148,
+        "share_pct": 6.54
+      },
+      {
+        "brand": "250 DESIGNS",
+        "items": 2645,
+        "share_pct": 4.17
+      }
+    ],
+    "discount_bands": [
+      {
+        "band": "20-40%",
+        "items": 63417
+      },
+      {
+        "band": "40-60%",
+        "items": 31
+      }
+    ],
+    "top_discounted_rated": [
+      {
+        "product_id": 277932,
+        "title": "Holiday Hype Printed Shirt • Style 1008",
+        "brand": "4WRD by Dressberry",
+        "price": 779.4,
+        "mrp": 1299.0,
+        "discount_percent": 40.0,
+        "rating": 0.0,
+        "rating_total": 5
+      },
+      {
+        "product_id": 184343,
+        "title": "Printed Maxi Nightdress • Style 8449",
+        "brand": "9shines Label",
+        "price": 1319.31,
+        "mrp": 2199.0,
+        "discount_percent": 40.0,
+        "rating": 0.0,
+        "rating_total": 13
+      },
+      {
+        "product_id": 505105,
+        "title": "Printed Nightdress • Style 6082",
+        "brand": "9shines Label",
+        "price": 1319.32,
+        "mrp": 2199.0,
+        "discount_percent": 40.0,
+        "rating": 0.0,
+        "rating_total": 10
+      },
+      {
+        "product_id": 364392,
+        "title": "Printed Maxi Nightdress • Style 9703",
+        "brand": "9shines Label",
+        "price": 1319.33,
+        "mrp": 2199.0,
+        "discount_percent": 40.0,
+        "rating": 0.05,
+        "rating_total": 1
+      },
+      {
+        "product_id": 326815,
+        "title": "Printed Nightdress • Style 4790",
+        "brand": "9shines Label",
+        "price": 1319.34,
+        "mrp": 2199.0,
+        "discount_percent": 40.0,
+        "rating": 0.0,
+        "rating_total": 8
+      },
+      {
+        "product_id": 191341,
+        "title": "Printed Nightdress • Style 4206",
+        "brand": "9shines Label",
+        "price": 1319.43,
+        "mrp": 2199.0,
+        "discount_percent": 40.0,
+        "rating": 0.0,
+        "rating_total": 3
+      },
+      {
+        "product_id": 529855,
+        "title": "Printed Nightdress • Style 9373",
+        "brand": "9shines Label",
+        "price": 1319.45,
+        "mrp": 2199.0,
+        "discount_percent": 40.0,
+        "rating": 0.0,
+        "rating_total": 13
+      },
+      {
+        "product_id": 454888,
+        "title": "Printed Nightdress • Style 9326",
+        "brand": "9shines Label",
+        "price": 1319.45,
+        "mrp": 2199.0,
+        "discount_percent": 40.0,
+        "rating": 0.45,
+        "rating_total": 1
+      },
+      {
+        "product_id": 263442,
+        "title": "Printed Maxi Nightdress • Style 3566",
+        "brand": "9shines Label",
+        "price": 1319.46,
+        "mrp": 2199.0,
+        "discount_percent": 40.0,
+        "rating": 0.63,
+        "rating_total": 5
+      },
+      {
+        "product_id": 183858,
+        "title": "Printed Maxi Nightdress • Style 4284",
+        "brand": "9shines Label",
+        "price": 1319.49,
+        "mrp": 2199.0,
+        "discount_percent": 40.0,
+        "rating": 0.0,
+        "rating_total": 1
+      }
+    ]
+  },
+  "bullets": [
+    "Avg price ₹2,371.00, avg MRP ₹3,409.57, avg discount 30.48% across 63,448 items.",
+    "0 items are at MRP (0% discount).",
+    "Top brand: 4711 with 24,995 items (~39.39%).",
+    "Largest discount band: 20-40% at 63,417 items (~100.0%)."
+  ]
+}

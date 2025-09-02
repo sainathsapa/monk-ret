@@ -1,0 +1,173 @@
+{
+  "kpis": {
+    "avg_price": 1688.14,
+    "avg_mrp": 2205.13,
+    "avg_discount_pct": 21.17,
+    "no_discount_items": 75257.0,
+    "products": 500000.0
+  },
+  "tables": {
+    "brand_concentration": [
+      {
+        "brand": "20Dresses",
+        "items": 330165,
+        "share_pct": 66.03
+      },
+      {
+        "brand": "4711",
+        "items": 64680,
+        "share_pct": 12.94
+      },
+      {
+        "brand": "9shines Label",
+        "items": 45073,
+        "share_pct": 9.01
+      },
+      {
+        "brand": "A Homes Grace",
+        "items": 34971,
+        "share_pct": 6.99
+      },
+      {
+        "brand": "4WRD by Dressberry",
+        "items": 15062,
+        "share_pct": 3.01
+      },
+      {
+        "brand": "250 DESIGNS",
+        "items": 10049,
+        "share_pct": 2.01
+      }
+    ],
+    "discount_bands": [
+      {
+        "band": "0-20%",
+        "items": 177346
+      },
+      {
+        "band": "20-40%",
+        "items": 175390
+      },
+      {
+        "band": "0%",
+        "items": 75279
+      },
+      {
+        "band": "40-60%",
+        "items": 68340
+      },
+      {
+        "band": "60%+",
+        "items": 3645
+      }
+    ],
+    "top_discounted_rated": [
+      {
+        "product_id": 410125,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 7466",
+        "brand": "A Homes Grace",
+        "price": 1820.25,
+        "mrp": 6000.0,
+        "discount_percent": 69.66,
+        "rating": 4.47,
+        "rating_total": 7
+      },
+      {
+        "product_id": 373415,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 7528",
+        "brand": "A Homes Grace",
+        "price": 1822.23,
+        "mrp": 6000.0,
+        "discount_percent": 69.63,
+        "rating": 4.72,
+        "rating_total": 3
+      },
+      {
+        "product_id": 371460,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 4056",
+        "brand": "A Homes Grace",
+        "price": 1822.68,
+        "mrp": 6000.0,
+        "discount_percent": 69.62,
+        "rating": 4.87,
+        "rating_total": 8
+      },
+      {
+        "product_id": 484692,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 8516",
+        "brand": "A Homes Grace",
+        "price": 1831.42,
+        "mrp": 6000.0,
+        "discount_percent": 69.48,
+        "rating": 4.3,
+        "rating_total": 12
+      },
+      {
+        "product_id": 241773,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 9115",
+        "brand": "A Homes Grace",
+        "price": 1833.36,
+        "mrp": 6000.0,
+        "discount_percent": 69.44,
+        "rating": 4.93,
+        "rating_total": 7
+      },
+      {
+        "product_id": 198669,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 4302",
+        "brand": "A Homes Grace",
+        "price": 1833.38,
+        "mrp": 6000.0,
+        "discount_percent": 69.44,
+        "rating": 4.71,
+        "rating_total": 5
+      },
+      {
+        "product_id": 414199,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 6183",
+        "brand": "A Homes Grace",
+        "price": 1835.53,
+        "mrp": 6000.0,
+        "discount_percent": 69.41,
+        "rating": 4.42,
+        "rating_total": 11
+      },
+      {
+        "product_id": 483368,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 4140",
+        "brand": "A Homes Grace",
+        "price": 1835.61,
+        "mrp": 6000.0,
+        "discount_percent": 69.41,
+        "rating": 4.41,
+        "rating_total": 19
+      },
+      {
+        "product_id": 465685,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 1138",
+        "brand": "A Homes Grace",
+        "price": 1837.17,
+        "mrp": 6000.0,
+        "discount_percent": 69.38,
+        "rating": 4.75,
+        "rating_total": 9
+      },
+      {
+        "product_id": 257526,
+        "title": "Microfiber AC Room 120 GSM Double Bed Comforter • Style 5605",
+        "brand": "A Homes Grace",
+        "price": 1837.28,
+        "mrp": 6000.0,
+        "discount_percent": 69.38,
+        "rating": 5.0,
+        "rating_total": 7
+      }
+    ]
+  },
+  "bullets": [
+    "Avg price ₹1,688.14, avg MRP ₹2,205.13, avg discount 21.17% across 500,000 items.",
+    "75,257 items are at MRP (0% discount).",
+    "Top brand: 20Dresses with 330,165 items (~66.03%).",
+    "Largest discount band: 0-20% at 177,346 items (~35.5%)."
+  ]
+}

@@ -1,0 +1,8 @@
+monkdb
+pandas
+dask[complete]
+mcp-monkdb
+opentelemetry-api
+streamlit
+crewai 
+crewai-tools
