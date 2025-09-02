@@ -61,6 +61,6 @@ deploy_agent = Agent(
 deploy_task = Task(
     description="Deploy Streamlit dashboard and provide a public URL.",
     agent=deploy_agent,
-    expected_output="A public ngrok link where the dashboard is live.",
+    expected_output="GIT PUSH",
     function=deploy_dashboard
 )
