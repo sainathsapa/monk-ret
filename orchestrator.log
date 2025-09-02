@@ -100,3 +100,28 @@
 2025-09-02 16:52:31,119 [INFO] Inserted batch of 5000 rows
 2025-09-02 16:52:31,139 [INFO] ✅ Inserted 100000 records into trent.products
 2025-09-02 16:52:31,374 [INFO] 🏁 Orchestrator finished successfully
+2025-09-02 17:06:18,053 [INFO] 🚀 Starting orchestrator
+2025-09-02 17:06:19,039 [INFO] ✅ Dask cluster up: 8 workers x 2 threads
+2025-09-02 17:06:19,052 [INFO] 📂 Loaded CSV: /Users/sainathsapa/Desktop/Trent/demo.retailagent/csv_folder/myntra_products_500k_part_5.csv with 11 columns
+2025-09-02 17:06:19,749 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:20,154 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:20,463 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:20,793 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:21,081 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:21,395 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:21,680 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:21,975 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:22,285 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:22,626 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:22,945 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:23,298 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:23,662 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:24,040 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:24,447 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:24,856 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:25,257 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:25,622 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:25,998 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:26,350 [INFO] Inserted batch of 5000 rows
+2025-09-02 17:06:26,377 [INFO] ✅ Inserted 100000 records into trent.products
+2025-09-02 17:06:26,609 [INFO] 🏁 Orchestrator finished successfully
