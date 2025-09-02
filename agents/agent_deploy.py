@@ -1,7 +1,7 @@
 from crewai import Agent, Task
 import subprocess
-from langchain_community.llms import Ollama
-llm = Ollama(model="ollama/mistral")   # Local, no API key needed
+from langchain.tools import tool
+
 
 import time
 from datetime import datetime
@@ -18,8 +18,13 @@ def run_command(command):
 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 commit_message = f"deploy: run at {timestamp}"
 
+@tool
+def deploy_dashboard(file_path: str) -> str:
+    """DEPLOY TO GIT
 
-def deploy_dashboard() -> str:
+    Returns:
+        str: STATUS
+    """
     try:
         # Start Streamlit in background
         # 1. git add .
@@ -49,18 +54,3 @@ def deploy_dashboard() -> str:
     except Exception as e:
         return f"❌ Error deploying dashboard: {e}"
 
-deploy_agent = Agent(
-    role="Website Deployment Agent",
-    goal="Deploy the dashboard and keep it accessible via ngrok.",
-    backstory="This agent ensures the Streamlit dashboard runs and stays online for demo.",
-    tools=[],
-    llm=llm,
-    verbose=True
-)
-
-deploy_task = Task(
-    description="Deploy Streamlit dashboard and provide a public URL.",
-    agent=deploy_agent,
-    expected_output="GIT PUSH",
-    function=deploy_dashboard
-)

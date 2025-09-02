@@ -12,14 +12,7 @@ class CSVHandler(FileSystemEventHandler):
             file_path = event.src_path
             print(f"📂 CSV file created: {file_path}")
             # Pass the file path as an argument to orchestrator.py
-            subprocess.run(['python', 'orchestrator.py', file_path], check=True)
-
-    # Optional: handle modifications
-    # def on_modified(self, event):
-    #     if not event.is_directory and event.src_path.endswith('.csv'):
-    #         file_path = event.src_path
-    #         print(f"✏️ CSV file modified: {file_path}")
-    #         subprocess.run(['python', 'orchestrator.py', file_path], check=True)
+            subprocess.run(['python', 'langchain_orch.py', file_path], check=True)
 
 if __name__ == "__main__":
     folder_to_watch = './csv_folder'  # Change to your folder path

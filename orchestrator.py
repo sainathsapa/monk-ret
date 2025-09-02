@@ -21,14 +21,6 @@ def main(file_path: str):
     insight_result = generate_insights(file_path)
     print(insight_result)
 
-    # Save insights into repo (optional)
-    # os.makedirs("./your-repo", exist_ok=True)
-    # base_name = os.path.splitext(os.path.basename(file_path))[0]
-    # insight_file = f"./your-repo/{base_name}_insights.md"
-    # with open(insight_file, "w") as f:
-    #     f.write(insight_result)
-    # print(f"📄 Insights saved to {insight_file}")
-
     # ---------------------------
     # Step 3: Deploy to GitHub
     # ---------------------------
