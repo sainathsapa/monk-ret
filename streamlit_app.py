@@ -64,7 +64,7 @@ def q(sql: str) -> pd.DataFrame:
 st.image("logo.png", width=250)  # Adjust width as needed
 
 st.set_page_config(page_title="Trent Agentic AI Demo", layout="wide")
-st.title("Trends Agentic AI: Data → Deployment")
+st.title("Product Trends Agentic AI: Data → Deployment")
 
 # ---------- Filters ----------
 
