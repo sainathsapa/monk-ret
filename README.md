@@ -12,23 +12,6 @@ It helps businesses gain actionable insights from large-scale retail data by orc
 - ⚡ **Batch Data Processing** – Automated CSV ingestion & database syncing  
 - 📈 **Interactive Dashboards** – Streamlit-based UI for analytics & insights  
 - 🔄 **Automation** – Watchdog-powered auto-refresh for new datasets  
-- 🔐 **Scalable Architecture** – Built with Python, FastAPI, and cloud-native practices  
-
----
-
-## 📂 Project Structure  
-
-```
-monk-ret/
-│── csv_insertion_batch.py   # Batch data loader for retail CSVs
-│── gen_insights_force.py    # AI-driven insights generation
-│── langchain_orch.py        # LangChain task orchestration
-│── orchestrator.py          # Workflow orchestrator
-│── run_mcp_analytics.py     # Core analytics runner
-│── streamlit_app.py         # Streamlit dashboard UI
-│── watchdog_.py             # Auto file watcher for new data
-│── requirements.txt         # Python dependencies
-```
 
 ---
 
